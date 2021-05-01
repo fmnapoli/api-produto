@@ -87,6 +87,7 @@ jobs:
       - name: Deploy Webapi
         uses: Azure/k8s-deploy@v1.3
         with:
+          images: fmnapoli/api-bootcamp-produto:${{github.run_number}}  
           manifests: |
             k8s/api/deployment.yaml
             k8s/mongodb/service.yaml 
