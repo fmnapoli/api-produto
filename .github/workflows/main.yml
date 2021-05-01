@@ -71,11 +71,11 @@ jobs:
           # value can be raw or base64-encoded.
           credentials: ${{secrets.GCP_CREDENTIALS}}
           # Name of the cluster to get credentials for.
-          cluster_name: default
+          cluster_name: k8s-cst
           # Location (Region/Zone) for the cluster.
           location: us-central1-c
           # Project ID where the cluster is deployed. If provided, this will override the project configured by gcloud.
-          project_id: teste
+          project_id: kubernetes-312416
           
       - name: Deploy MongoDB
         uses: Azure/k8s-deploy@v1.3
