@@ -33,6 +33,6 @@ jobs:
           # Path to the Dockerfile
           file: ./src/Dockerfile
           push: true
-          tags:
+          tags: |
             fmnapoli/api-bootcamp-produto:latest
             fmnapoli/api-bootcamp-produto:${{github.run_number}}
